@@ -1,20 +1,17 @@
-
-let x = 0
-let y = 0
-function setup(){
-
-    createCanvas(600,400)
-    colorMode(HSB)
-    background("white")
-
-
-}
-
-function draw(){
-
-    background(0)
-    stroke("red")
-    line(x, 0, 150+x, 200)
-    line(150+x,200,50+x,400);
-    x += 3;
-}
+function setup() {
+    createCanvas(400,400);
+    background(0);
+    colorMode(HSB);
+    }
+ 
+ 
+let x = 0;
+   
+    function draw(){
+        background(0,0,0,0.04);
+        stroke(0,100,100);
+   
+    line(x,0,x+100,200);
+    line(x+100,200,x,400);
+    x += 1;
+    }
