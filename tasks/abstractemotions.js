@@ -2,9 +2,15 @@ createCanvas(windowWidth, windowHeight)
 background(0)
 colorMode(HSB)
 
-fill("green")
-circle(windowWidth/2, windowHeight/2, 50)
+let middleX = width / 2;
+let middleY = height / 2;
 
-function donut(){
+fill("green")
+circle(middleX, middleY, 50)
+
+function whatamidoingwithmylifeisuckatthis(){
+
+
+
 
 }
