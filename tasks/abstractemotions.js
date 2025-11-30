@@ -1,12 +1,12 @@
 let amount = 20 + floor(random(0, 6));
 let choose = random() < 0.5;
-let radius
+let radius;
 
 function setup(){
-createCanvas(windowWidth, windowHeight)
-background(0)
-colorMode(HSB)
-noStroke
+createCanvas(windowWidth, windowHeight);
+background(0);
+colorMode(HSB);
+noStroke;
 
 let base = min(width, height);
 let r1 = base * 0.1;
@@ -16,8 +16,8 @@ radius = choose ? r2 : r1;
 let middleX = width / 2;
 let middleY = height / 2;
 
-fill("green")
-circle(middleX, middleY, 50)
+fill("green");
+circle(middleX, middleY, 50);
 
 whatamidoingwithmylifeisuckatthis(middleX, middleY, radius, 20)
 }
