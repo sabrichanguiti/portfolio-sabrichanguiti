@@ -19,10 +19,10 @@ let middleY = height / 2;
 fill("green");
 circle(middleX, middleY, 50);
 
-whatamidoingwithmylifeisuckatthis(middleX, middleY, radius, 20)
+donut(middleX, middleY, radius, 20)
 }
 
-function whatamidoingwithmylifeisuckatthis(middleX, middleY, r, n) {
+function donut(middleX, middleY, r, n) {
 
     for (let i = 0; i < n; i++) {
         let a = map(i, 0, n, 0, TWO_PI);
