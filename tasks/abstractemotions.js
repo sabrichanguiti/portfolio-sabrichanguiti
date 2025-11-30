@@ -4,3 +4,7 @@ colorMode(HSB)
 
 fill("green")
 circle(windowWidth/2, windowHeight/2, 50)
+
+function donut(){
+
+}
