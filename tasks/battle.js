@@ -9,6 +9,14 @@ function setup() {
     colorMode(HSB, 360, 100, 100);
     rectMode(CENTER);
     noStroke();
+
+    for (let i = 0; i < 20; i++) {
+    testFunction.push({
+        x: random(width),
+        y: random(height),
+        angle: random(TWO_PI)
+    });
+}
 }
 function draw() {
     background(0, 0, 10);
