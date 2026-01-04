@@ -42,10 +42,10 @@ function draw() {
             noStroke();
             fill(h, 80, 100);
             circle(e.x, e.y, e.size);
+        } else {
+                fill(0, 100, 100);
+                rect(e.x, e.y, e.size * 1.5, e.size * 1.5);
         }
-         else {
-                    fill(0, 100, 100);
-                    rect(e.x, e.y, e.size * 1.5, e.size * 1.5);
     }
 }
 
@@ -88,53 +88,12 @@ function receivedOSC(address, args) {
         case "/pad2":
             pad2();
             break;
-        case "/pad3":
-
-            break;
-        case "/pad4":
-
-            break;
-        case "/pad5":
-
-            break;
-        case "/pad6":
-
-            break;
-        case "/pad7":
-
-            break;
-        case "/pad8":
-
-            break;
         case "/k1":
             k1(values[0] / 10);
             break;
         case "/k2":
             k2(values[0] / 127 * 360);
             break;
-        case "/k3":
-
-            break;
-        case "/k4":
-
-            break;
-        case "/k5":
-
-            break;
-        case "/k6":
-
-            break;
-        case "/k7":
-
-            break;
-        case "/k8":
-
-            break;
+        
     }
-
-
-
-
-
-}
 }
