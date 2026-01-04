@@ -42,6 +42,10 @@ function keyPressed() {
 
 function pad1() {
     size = 0;
+    for (let s of testFunction) {
+        s.x = random(width);
+        s.y = random(height);
+    }
 }
 
 function pad2() {
