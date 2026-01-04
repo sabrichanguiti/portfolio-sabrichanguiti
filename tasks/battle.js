@@ -1,4 +1,4 @@
-let size = 0;
+let size = 50;
 let h = 0;
 let sizeDiff = 1;
 let shape = true;
@@ -13,9 +13,8 @@ function setup() {
 }
 function draw() {
     background(0, 0, 10);
-    size += sizeDiff;
     fill(h, 100, 100);
-    if (shape) {
+    if (!verraden) {
         circle(width / 2, height / 2, size);
     } else {
         rect(width / 2, height / 2, size, size);
