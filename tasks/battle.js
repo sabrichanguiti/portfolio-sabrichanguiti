@@ -43,6 +43,9 @@ function draw() {
             fill(h, 80, 100);
             circle(e.x, e.y, e.size);
         }
+         else {
+                    fill(0, 100, 100);
+                    rect(e.x, e.y, e.size * 1.5, e.size * 1.5);
     }
 }
 
@@ -56,11 +59,14 @@ function keyPressed() {
 }
 
 function pad1() {
-    size = 0;
+    for (let e of particles) {
+        e.x = width / 2;
+        e.y = height / 2;
+    }
 }
 
 function pad2() {
-    shape = !shape;
+    verraden = !verraden;
 }
 
 function k1(size) {
@@ -130,4 +136,5 @@ function receivedOSC(address, args) {
 
 
 
+}
 }
