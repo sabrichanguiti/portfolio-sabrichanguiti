@@ -1,22 +1,12 @@
-// Sabri CHANGUITI, Verraden-Vertrouwd
 let size = 0;
 let h = 0;
 let sizeDiff = 1;
 let shape = true;
-let testFunction = []; 
 function setup() {
     createCanvas(windowWidth, windowHeight);
     colorMode(HSB, 360, 100, 100);
     rectMode(CENTER);
     noStroke();
-
-    for (let i = 0; i < 20; i++) {
-    testFunction.push({
-        x: random(width),
-        y: random(height),
-        angle: random(TWO_PI)
-    });
-}
 }
 function draw() {
     background(0, 0, 10);
@@ -31,7 +21,6 @@ function draw() {
     k2(mouseY);
 }
 
-
 function keyPressed() {
     if (key === 'a' || key === 'A') {
         pad1();
@@ -43,10 +32,6 @@ function keyPressed() {
 
 function pad1() {
     size = 0;
-    for (let s of testFunction) {
-        s.x = random(width);
-        s.y = random(height);
-    }
 }
 
 function pad2() {
