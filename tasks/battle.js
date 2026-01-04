@@ -10,6 +10,16 @@ function setup() {
     colorMode(HSB, 360, 100, 100);
     rectMode(CENTER);
     noStroke();
+
+    for (let i = 0; i < 50; i++) {
+        particles.push({
+            x: random(width),
+            y: random(height),
+            vx: random(-1, 1),
+            vy: random(-1, 1),
+            size: random(5, 12)
+        });
+    }
 }
 function draw() {
     background(0, 0, 10);
