@@ -3,7 +3,7 @@ let size = 0;
 let h = 0;
 let sizeDiff = 1;
 let shape = true;
-let testFunction; 
+let testFunction = []; 
 function setup() {
     createCanvas(windowWidth, windowHeight);
     colorMode(HSB, 360, 100, 100);
