@@ -22,15 +22,28 @@ function setup() {
     }
 }
 function draw() {
-    background(0, 0, 10);
-    fill(h, 100, 100);
-    if (!verraden) {
-        circle(width / 2, height / 2, size);
-    } else {
-        rect(width / 2, height / 2, size, size);
+    background(0, 0, 10, 0.2);
+    k1(mouseX / 100); 
+    k2(mouseY / height * 360);
+
+    for (let i = 0; i < particles.length; i++) {
+        let e = particles[i];
+        e.x += e.vx * sizeDiff;
+        e.y += e.vy * sizeDiff;
+
+        if (!verraden) {
+            for (let j = i + 1; j < particles.length; j++) {
+                let other = particles[j];
+                if (dist(e.x, e.y, other.x, other.y) < trustDistance) {
+                    stroke(h, 50, 100, 0.3);
+                    line(e.x, e.y, other.x, other.y);
+                }
+            }
+            noStroke();
+            fill(h, 80, 100);
+            circle(e.x, e.y, e.size);
+        }
     }
-    k1(mouseX / 100);
-    k2(mouseY);
 }
 
 function keyPressed() {
