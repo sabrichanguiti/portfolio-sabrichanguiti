@@ -31,6 +31,7 @@ function draw() {
     k2(mouseY);
 }
 
+
 function keyPressed() {
     if (key === 'a' || key === 'A') {
         pad1();
